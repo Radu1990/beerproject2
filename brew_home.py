@@ -86,3 +86,4 @@ if __name__ == '__main__':
 conn = bdc.create_connection()
 bdc.table_init(conn)
 conn.close()
+#hjiasdijasd
