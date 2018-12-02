@@ -15,8 +15,8 @@ def abort_if_beer_doesnt_exist(beer_id, all_ids):
         abort(404, message="Beer %s doesn't exist yet in the table" % beer_id)
 
 
-def multiply_by_two(x):
-    return x*1220
+def basic_function(x):
+    return x*2
 
 
 # Check or edit
