@@ -2,7 +2,7 @@ from flask import Flask, request
 from flask_restful import abort, Api, Resource
 import requests
 
-import beerproject.database_commands as bdc
+import beerproject2.database_commands as bdc
 
 app = Flask(__name__)
 api = Api(app)
@@ -13,6 +13,10 @@ def abort_if_beer_doesnt_exist(beer_id, all_ids):
     beer_id_to_int = int(beer_id)
     if beer_id_to_int not in all_ids:
         abort(404, message="Beer %s doesn't exist yet in the table" % beer_id)
+
+
+def basic_function(x):
+    return x*2
 
 
 # Check or edit

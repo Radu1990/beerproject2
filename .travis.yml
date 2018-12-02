@@ -1,0 +1,10 @@
+language: python
+python:
+  - '3.7'
+script:
+  - python -m unittest tests.MyUnitTest
+matrix:
+  include:
+    - python: 3.7
+      dist: xenial
+      sudo: true
